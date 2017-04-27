@@ -17,9 +17,9 @@ var NUMBER_OF_STARS = 80;
 var MAX_LINE_DISTANCE = 130;
 
 //Global color hex values
-var MAIN_COLOR = "#b5dbe8";
-var SECONDARY_COLOR = "#b5dbe8";
-var TERTIARY_COLOR = "#b5dbe8";
+var MAIN_COLOR = "#ADD8E6";
+var SECONDARY_COLOR = "#ADD8E6";
+var TERTIARY_COLOR = "#ADD8E6";
 
 //Global colors converted to RGB values
 var MAIN_R = hexToRgb(MAIN_COLOR).r;
@@ -57,8 +57,8 @@ function Star(placement, isFront){
 	this.x = Math.random() * canvas.width;
 	this.y = Math.random() * canvas.height;
 
-	this.vx = STAR_VELOCITY - (Math.random() * 0.15);
-	this.vy = STAR_VELOCITY - (Math.random() * 0.15);
+	this.vx = STAR_VELOCITY - (Math.random() * 0.2);
+	this.vy = STAR_VELOCITY - (Math.random() * 0.3);
 
 	this.radius = Math.random() * MAX_STAR_RADIUS;
 
